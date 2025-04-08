@@ -1,0 +1,199 @@
+#root {
+  max-width: 320px;
+  margin: 0 auto;
+  font-family: karla, sans-serif;
+}
+
+/*=====HEADER=====*/
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  height: 65px;
+}
+
+.header-container img {
+  width: 30px;
+  height: 26px;
+  margin: auto 10px;
+}
+
+.header-container header {
+  margin: auto 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 010%;
+}
+
+
+/*=====FORM=====*/
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+}
+
+.meme-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 320px;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+
+.meme-form label {
+  color: #374151;
+  margin-left: 5px;
+}
+
+.meme-form input {
+  margin-top: 10px;
+  width: 130px;
+  height: 20px;
+  border-radius: 5px;
+  padding: 7px 10px;
+  color: #374151;
+  border: 1px solid #D1D5DB;
+  background-color: white;
+  margin-left: 40px;
+}
+
+#top-text {
+  margin-left: 70px;
+}
+
+.meme-form button {
+  width: 285px;
+  height: 30px;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: -10%;
+  
+}
+
+
+/*=====MEME=====*/
+
+.meme img {
+  display: block;
+  width: 280px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.meme span {
+  position: absolute;
+    margin-left: 20px;
+    text-align: center;
+    padding-inline: 5px;
+    font-family: impact, sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;  
+    text-shadow:
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0 2px 0 #000,
+    2px 0 0 #000,
+    0 -2px 0 #000,
+    -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+
+.bottom {
+  margin-top: -50px;
+}
+
+.top {
+  margin-top: -160px;
+}
+/*=====RESPONSIVE DESIGN=====*/
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 600px) and ( max-width: 1280px) {
+  #root {
+    max-width: 550px;
+  }
+
+  .header-container img {
+    margin-left: 20px;
+  }
+  .header-container header{
+    font-size: 24px;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 500px;
+    gap: 15px;
+    margin-left: -93px;
+  }
+
+  .inputs label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+
+  .inputs .button-text label {
+    margin-left: 0px;
+  }
+
+  .inputs input {
+    margin: 0;
+    width: 220px;
+    height: 35px;
+    color: #6B7280;
+  }
+  
+  .inputs #top-text {
+    margin-left: 0;
+  }
+
+  .meme-form button{
+    width: 510px;
+    height: 40px;
+    margin-left: -95px;
+  }
+
+  .meme img {
+    width: 505px;
+    margin-top: 30px;
+  }
+
+  .meme span {
+    font-size: 2rem;
+    margin-left: 100px;
+  }
+
+  .top {
+    margin-top: -270px;
+  }
+
+  .bottom{
+    margin-top: -90px;
+  }
+  
+}
