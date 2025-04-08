@@ -42,14 +42,14 @@ export default function Main() {
         <form className="meme-form">
             <div className="inputs">
                     <label htmlFor="top-text">Top Text
-                        <input type="text" id="top-text" name="top-text" 
+                        <input type="text" id="top-text" name="topText" 
                         placeholder='Top'
                         onChange={handleChange} 
                         value={meme.topText}
                         ></input>
                     </label>
                     <label htmlFor="bottom-text">Bottom Text
-                        <input type="text" id="bottom-text" name="bottom-text"
+                        <input type="text" id="bottom-text" name="bottomText"
                         placeholder='Bottom'
                         onChange={handleChange}
                         value={meme.bottomText}
